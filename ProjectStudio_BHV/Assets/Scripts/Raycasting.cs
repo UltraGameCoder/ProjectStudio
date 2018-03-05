@@ -15,7 +15,7 @@ public class Raycasting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !areHUDSOpen())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -37,5 +37,20 @@ public class Raycasting : MonoBehaviour {
                 print("I'm looking at nothing!");
             }
         }
+        if (infoPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape)) {
+            infoPanel.SetActive(false);
+        }
+      
+    }
+
+    private bool areHUDSOpen() {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("HUDElement");
+
+        foreach (GameObject obj in objects) {
+            if (obj.activeSelf) {
+                return true;
+            }
+        }
+        return false;
     }
 }

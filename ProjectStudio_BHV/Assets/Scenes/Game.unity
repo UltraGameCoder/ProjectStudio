@@ -2716,9 +2716,11 @@ GameObject:
   - component: {fileID: 1288329741}
   - component: {fileID: 1288329739}
   - component: {fileID: 1288329740}
+  - component: {fileID: 1288329747}
   - component: {fileID: 1288329744}
   - component: {fileID: 1288329743}
   - component: {fileID: 1288329745}
+  - component: {fileID: 1288329746}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2816,11 +2818,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288329738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ccee5765925b09429abd23a5e02f47a, type: 3}
+  m_Script: {fileID: 11500000, guid: 220153dc37bdb3743906018369954314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 150
   walkSpeed: 5
+  hSpeed: 2
+  vSpeed: 2
 --- !u!114 &1288329745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2834,6 +2837,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1150275279}
   infoPanel: {fileID: 2015240521}
+--- !u!114 &1288329746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288329738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f812fdfd21754443a114a6051540ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  infoPanel: {fileID: 0}
+--- !u!114 &1288329747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288329738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f812fdfd21754443a114a6051540ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  infoPanel: {fileID: 0}
 --- !u!1 &1326937115 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100084, guid: 0941ebcc18daa2e40b4b1b4e3500300f, type: 3}
@@ -4178,9 +4207,10 @@ GameObject:
   - component: {fileID: 2015240522}
   - component: {fileID: 2015240524}
   - component: {fileID: 2015240523}
+  - component: {fileID: 2015240525}
   m_Layer: 5
   m_Name: HurtInfo
-  m_TagString: Untagged
+  m_TagString: HUDElement
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4241,6 +4271,23 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2015240521}
+--- !u!114 &2015240525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015240521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e16a9f7bad57ba489aea04db62074f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: {fileID: 385408438}
+  answers:
+  - {fileID: 240398116}
+  - {fileID: 1984821918}
+  - {fileID: 726294892}
+  - {fileID: 1697670473}
 --- !u!1 &2019623586 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100072, guid: 0941ebcc18daa2e40b4b1b4e3500300f, type: 3}
