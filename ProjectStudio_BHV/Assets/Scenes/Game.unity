@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2473,6 +2473,8 @@ GameObject:
   - component: {fileID: 1150275279}
   - component: {fileID: 1150275278}
   - component: {fileID: 1150275277}
+  - component: {fileID: 1150275281}
+  - component: {fileID: 1150275282}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2537,12 +2539,36 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1150275276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.056, y: 0.491, z: -0.096}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1288329742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150275281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150275276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32af1bdcae7df44f856f0f9b24ab1f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1150275282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150275276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952078b1959f35146bda2bd69e785620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpd: 2
+  smoothing: 2
 --- !u!1 &1163874121 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100126, guid: 0941ebcc18daa2e40b4b1b4e3500300f, type: 3}
@@ -2719,6 +2745,8 @@ GameObject:
   - component: {fileID: 1288329744}
   - component: {fileID: 1288329743}
   - component: {fileID: 1288329745}
+  - component: {fileID: 1288329746}
+  - component: {fileID: 1288329748}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2819,8 +2847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccee5765925b09429abd23a5e02f47a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 150
-  walkSpeed: 5
 --- !u!114 &1288329745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2834,6 +2860,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1150275279}
   infoPanel: {fileID: 2015240521}
+--- !u!114 &1288329746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288329738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220153dc37bdb3743906018369954314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 5
+--- !u!114 &1288329748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288329738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a2ec5274ee7c8b4da70699eb7ba8c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326937115 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100084, guid: 0941ebcc18daa2e40b4b1b4e3500300f, type: 3}

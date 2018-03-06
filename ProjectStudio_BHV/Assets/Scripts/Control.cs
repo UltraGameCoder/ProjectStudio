@@ -1,36 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Control : MonoBehaviour {
+public class Control : MonoBehaviour
+{
 
-    public int walkSpeed;
+    public float walkSpeed = 5.0F;
 
-    public float hSpeed = 2.0f;
-    public float vSpeed = 2.0f;
+    void Start()
+    {
 
-    private float hSight = 0.0f;
-    private float vSight = 0.0f;
+    }
 
     void Update()
     {
-  
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position += transform.forward * Time.deltaTime * walkSpeed;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position -= transform.forward * Time.deltaTime * walkSpeed;
-        }
-  
-        float moveH = Input.GetAxis("Horizontal");
-        float moveV = Input.GetAxis("Vertical");
+        float translation = Input.GetAxis("Vertical") * walkSpeed;
+        float straffe = Input.GetAxis("Horizontal") * walkSpeed;
+        translation *= Time.deltaTime;
+        straffe *= Time.deltaTime;
 
-        hSight += hSpeed * Input.GetAxis("Mouse X");
-        vSight -= vSpeed * Input.GetAxis("Mouse Y");
+        transform.Translate(straffe, 0, translation);
 
-        transform.eulerAngles = new Vector3(vSight, hSight, 0.0f);
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            walkSpeed += 5;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            walkSpeed -= 5;
+        }
 
     }
 }
