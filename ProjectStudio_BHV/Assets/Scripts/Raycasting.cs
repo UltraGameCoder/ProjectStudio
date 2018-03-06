@@ -19,6 +19,10 @@ public class Raycasting : MonoBehaviour {
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+           
+
             if (Physics.Raycast(ray, out hit, 3))
             {
                 if (hit.transform.CompareTag("HurtPerson"))

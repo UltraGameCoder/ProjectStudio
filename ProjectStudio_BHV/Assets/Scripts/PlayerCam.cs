@@ -15,9 +15,11 @@ public class PlayerCam : MonoBehaviour
 
     void Start()
     {
-
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         character = this.transform.parent.gameObject;
     }
+  
 
     void Update()
     {
