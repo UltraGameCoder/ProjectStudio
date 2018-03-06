@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class SituationPanelScript : MonoBehaviour {
 
+
     public Text question;
     public Text[] answers;
 
@@ -17,6 +18,7 @@ public class SituationPanelScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+
+    }
 }
