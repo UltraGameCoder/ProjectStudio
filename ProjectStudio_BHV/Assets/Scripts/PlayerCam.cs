@@ -19,20 +19,37 @@ public class PlayerCam : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         character = this.transform.parent.gameObject;
     }
-  
+
 
     void Update()
     {
-        var mouseD = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+        if (!areHUDSOpen())
+        {
+            var mouseD = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
-        mouseD = Vector2.Scale(mouseD, new Vector2(turnSpd * smoothing, turnSpd * smoothing));
-        smooth.x = Mathf.Lerp(smooth.x, mouseD.x, 1.0f / smoothing);
-        smooth.y = Mathf.Lerp(smooth.y, mouseD.y, 1.0f / smoothing);
-        mouseS += smooth;
+            mouseD = Vector2.Scale(mouseD, new Vector2(turnSpd * smoothing, turnSpd * smoothing));
+            smooth.x = Mathf.Lerp(smooth.x, mouseD.x, 1.0f / smoothing);
+            smooth.y = Mathf.Lerp(smooth.y, mouseD.y, 1.0f / smoothing);
+            mouseS += smooth;
 
-       mouseS.y = Mathf.Clamp(mouseS.y, -90.0f, 90.0f);
+            mouseS.y = Mathf.Clamp(mouseS.y, -90.0f, 90.0f);
 
-        transform.localRotation = Quaternion.AngleAxis(-mouseS.y, Vector3.right);
-        character.transform.localRotation = Quaternion.AngleAxis(mouseS.x, character.transform.up);
+            transform.localRotation = Quaternion.AngleAxis(-mouseS.y, Vector3.right);
+            character.transform.localRotation = Quaternion.AngleAxis(mouseS.x, character.transform.up);
+        }
+    }
+
+    private bool areHUDSOpen()
+    {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("HUDElement");
+
+        foreach (GameObject obj in objects)
+        {
+            if (obj.activeSelf)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
