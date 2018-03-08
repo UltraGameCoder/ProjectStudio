@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Top
   - HurtPerson
+  - HUDElement
   layers:
   - Default
   - TransparentFX

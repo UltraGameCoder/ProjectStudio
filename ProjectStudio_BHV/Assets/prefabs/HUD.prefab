@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224511885608839910}
   - component: {fileID: 222938543130747490}
   - component: {fileID: 114275863780630014}
+  - component: {fileID: 114213570147810456}
   m_Layer: 5
   m_Name: HurtInfo
   m_TagString: Untagged
@@ -109,6 +110,23 @@ GameObject:
   - component: {fileID: 114059178150184588}
   m_Layer: 5
   m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1426324177144052
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224698920217637498}
+  - component: {fileID: 222532500494001572}
+  - component: {fileID: 114325601298169146}
+  m_Layer: 5
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -328,6 +346,24 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: hand koelen met lauw water
+--- !u!114 &114213570147810456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000271316065480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e16a9f7bad57ba489aea04db62074f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 0}
+  question: {fileID: 114059178150184588}
+  answers:
+  - {fileID: 114648016050140568}
+  - {fileID: 114461420736999840}
+  - {fileID: 114166176025208754}
+  - {fileID: 114454177126029924}
 --- !u!114 &114237205439069864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -423,6 +459,33 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114325601298169146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426324177144052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114454177126029924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,7 +518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: melk over de hand heen gieten
 --- !u!114 &114461420736999840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -593,7 +656,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 10
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -786,6 +849,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672745265352916}
+--- !u!222 &222532500494001572
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426324177144052}
 --- !u!222 &222807532265105042
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -814,7 +883,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -857,8 +926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90.02, y: -31.106}
-  m_SizeDelta: {x: 180.04, y: 54.57}
+  m_AnchoredPosition: {x: 90.02, y: -14}
+  m_SizeDelta: {x: 183.04, y: 54.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224109336588441778
 RectTransform:
@@ -875,11 +944,11 @@ RectTransform:
   - {fileID: 224394909657116932}
   - {fileID: 224748044520097346}
   m_Father: {fileID: 224511885608839910}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.02, y: 101.22}
+  m_AnchoredPosition: {x: 40.02, y: -26.2}
   m_SizeDelta: {x: 180.04, y: 302.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224180310646864866
@@ -899,7 +968,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 180.04, y: 36.43}
+  m_SizeDelta: {x: 182.04, y: 30.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224235377917145734
 RectTransform:
@@ -916,8 +985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90.02, y: -22.738}
-  m_SizeDelta: {x: 180.04, y: 45.475}
+  m_AnchoredPosition: {x: 90.02, y: -14.777206}
+  m_SizeDelta: {x: 181.04, y: 45.475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224289110693001146
 RectTransform:
@@ -936,7 +1005,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 180.04, y: 36.43}
+  m_SizeDelta: {x: 182.04, y: 30.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224394909657116932
 RectTransform:
@@ -955,7 +1024,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 180.04, y: 68.1075}
+  m_SizeDelta: {x: 183.04, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224511885608839910
 RectTransform:
@@ -967,8 +1036,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 224934925793351784}
   - {fileID: 224109336588441778}
+  - {fileID: 224698920217637498}
   m_Father: {fileID: 224762487002980368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -976,6 +1045,25 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224698920217637498
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426324177144052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224934925793351784}
+  m_Father: {fileID: 224511885608839910}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -233.2, y: 0.00042915}
+  m_SizeDelta: {x: 267.99, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224748044520097346
 RectTransform:
@@ -994,7 +1082,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 180.04, y: 68.1075}
+  m_SizeDelta: {x: 182.04, y: 35.1075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224762487002980368
 RectTransform:
@@ -1030,7 +1118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000015423, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.000015423, y: 4.2}
   m_SizeDelta: {x: 180.03998, y: 38.978573}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224934925793351784
@@ -1043,11 +1131,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 224511885608839910}
+  m_Father: {fileID: 224698920217637498}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189.20001, y: 0}
+  m_AnchoredPosition: {x: 10.4, y: 0}
   m_SizeDelta: {x: 260, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
