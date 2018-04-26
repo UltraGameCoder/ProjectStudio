@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 8a5fbd677d4f1fa4abea103d814893f2
+timeCreated: 1519128938
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bowl
+    100002: Bureau
+    100004: Camera
+    100006: ingang
+    100008: ingang.001
+    100010: Kast_groen
+    100012: Lamp
+    100014: //RootNode
+    100016: Logo
+    100018: Piece_wood
+    100020: Ronde_muur
+    100022: Stoel
+    100024: Sun
+    100026: Sun.001
+    100028: Table
+    100030: Varwarming
+    100032: vase_1
+    100034: Vase_2
+    100036: Wit_vacht
+    400000: Bowl
+    400002: Bureau
+    400004: Camera
+    400006: ingang
+    400008: ingang.001
+    400010: Kast_groen
+    400012: Lamp
+    400014: //RootNode
+    400016: Logo
+    400018: Piece_wood
+    400020: Ronde_muur
+    400022: Stoel
+    400024: Sun
+    400026: Sun.001
+    400028: Table
+    400030: Varwarming
+    400032: vase_1
+    400034: Vase_2
+    400036: Wit_vacht
+    2000000: Camera
+    2100000: Material.008
+    2100002: Material.009
+    2100004: Bijzettafel
+    2100006: Material.011
+    2100008: Material.010
+    2100010: Material.007
+    2100012: Material.006
+    2100014: Fur_tex
+    2100016: Material.005
+    2100018: Material.002
+    2100020: Chair
+    2100022: Material
+    2100024: No Name
+    2300000: Bowl
+    2300002: Bureau
+    2300004: ingang
+    2300006: ingang.001
+    2300008: Kast_groen
+    2300010: Lamp
+    2300012: Logo
+    2300014: Piece_wood
+    2300016: Ronde_muur
+    2300018: Stoel
+    2300020: Table
+    2300022: Varwarming
+    2300024: vase_1
+    2300026: Vase_2
+    2300028: Wit_vacht
+    3300000: Bowl
+    3300002: Bureau
+    3300004: ingang
+    3300006: ingang.001
+    3300008: Kast_groen
+    3300010: Lamp
+    3300012: Logo
+    3300014: Piece_wood
+    3300016: Ronde_muur
+    3300018: Stoel
+    3300020: Table
+    3300022: Varwarming
+    3300024: vase_1
+    3300026: Vase_2
+    3300028: Wit_vacht
+    4300000: Varwarming
+    4300002: ingang.001
+    4300004: Piece_wood
+    4300006: Bowl
+    4300008: vase_1
+    4300010: Vase_2
+    4300012: Lamp
+    4300014: Bureau
+    4300016: Table
+    4300018: Wit_vacht
+    4300020: Kast_groen
+    4300022: Logo
+    4300024: Stoel
+    4300026: Ronde_muur
+    4300028: ingang
+    10800000: Sun
+    10800002: Sun.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

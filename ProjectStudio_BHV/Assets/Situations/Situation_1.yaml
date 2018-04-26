@@ -1,7 +1,9 @@
-Question: deze man heeft zijn hand verbrand, wat moet je doen?
+Question1: Deze man heeft zijn hand verbrand, wat moet je als eerst doen?
+Question2: Je hebt zijn hand gekoeld maar de wond is nog steeds heel rood, wat doe je vervolgens?
 Answers:
-    1: druk op de hand geven.
-    2: pleister op de hand doen.
-    3: hand koelen met lauw water.
-    4: hand in melk leggen.
-RightAnswer: 3
+    1: Druk op de hand geven.
+    2: Pleister op de hand doen.
+    3: Hand koelen met lauw water.
+    4: Huisarts bellen.
+FirstRightAnswer: 3
+SecondRightAnswer: 4

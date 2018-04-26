@@ -1,0 +1,9 @@
+Question1: Deze vrouw heeft een snee in haar hand, wat doe je?
+Question2: De snee is schoon, wat doe je nu?
+Answers:
+    1: De snee schoon maken.
+    2: Verband om de snee doen.
+    3: Naar de huisarts gaan.
+    4: De snee dicht nieten.
+FirstRightAnswer: 1
+SecondRightAnswer: 2

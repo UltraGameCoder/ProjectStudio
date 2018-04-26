@@ -1,3 +1,10 @@
 *.unity binary diff=unity
 *.prefab binary diff=unity
 *.asset binary diff=unity
+ProjectStudio_BHV/Assets/Scenes/Game.unity merge=ours
+
+ProjectStudio_BHV/Assets/Scenes/MainMenu.unity merge=theirs
+
+ProjectStudio_BHV/Assets/Situations.meta merge=theirs
+
+ProjectStudio_BHV/Library/ merge=ours

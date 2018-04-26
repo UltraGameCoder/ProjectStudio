@@ -1,0 +1,9 @@
+Question1: Deze vrouw heeft iets in haar oog, wat doe je?
+Question2: Het lijkt er op dat er nog irritatie in het oog is, wat zou je nu doen?
+Answers:
+    1: Een paar druppels water in het oog druppelen.
+    2: Met een vinger het er uit pulken.
+    3: Met een zakdoekje het er uit halen.
+    4: Contact opnemen met de huisarts.
+FirstRightAnswer: 3
+SecondRightAnswer: 4

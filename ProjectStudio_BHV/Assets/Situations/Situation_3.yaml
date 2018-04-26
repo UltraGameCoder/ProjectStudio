@@ -1,0 +1,9 @@
+Question1: Deze man heeft zijn enkel gekneusd, wat moet je doen?
+Question2: Je hebt zijn enkel gekoeld, wat zou je vervolgens moeten doen?
+Answers:
+    1: Vertellen dat hij rust moet nemen.
+    2: Pleister op de enkel plakken.
+    3: Enkel voor 10 minuten koelen.
+    4: Enkel voor 5 minuten koelen.
+FirstRightAnswer: 3
+SecondRightAnswer: 1

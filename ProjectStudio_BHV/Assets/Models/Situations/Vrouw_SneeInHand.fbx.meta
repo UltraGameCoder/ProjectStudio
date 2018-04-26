@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: a89351132f9be894e82a2a4121c44ba6
+timeCreated: 1521806879
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Woman
+    100004: Woman-arm
+    100006: Woman-arm.001
+    100008: Woman-hand
+    100010: Woman-hand.001
+    100012: Woman-hoofd
+    100014: Woman-leg
+    100016: Woman-leg.001
+    100018: Woman-onderarm
+    100020: Woman-onderarm.001
+    100022: Woman-scheenbeen
+    100024: Woman-scheenbeen.001
+    100026: Woman-voet
+    100028: Woman-voet.001
+    400000: //RootNode
+    400002: Woman
+    400004: Woman-arm
+    400006: Woman-arm.001
+    400008: Woman-hand
+    400010: Woman-hand.001
+    400012: Woman-hoofd
+    400014: Woman-leg
+    400016: Woman-leg.001
+    400018: Woman-onderarm
+    400020: Woman-onderarm.001
+    400022: Woman-scheenbeen
+    400024: Woman-scheenbeen.001
+    400026: Woman-voet
+    400028: Woman-voet.001
+    2100000: No Name
+    2300000: Woman
+    2300002: Woman-arm
+    2300004: Woman-arm.001
+    2300006: Woman-hand
+    2300008: Woman-hand.001
+    2300010: Woman-hoofd
+    2300012: Woman-leg
+    2300014: Woman-leg.001
+    2300016: Woman-onderarm
+    2300018: Woman-onderarm.001
+    2300020: Woman-scheenbeen
+    2300022: Woman-scheenbeen.001
+    2300024: Woman-voet
+    2300026: Woman-voet.001
+    2300028: //RootNode
+    3300000: Woman
+    3300002: Woman-arm
+    3300004: Woman-arm.001
+    3300006: Woman-hand
+    3300008: Woman-hand.001
+    3300010: Woman-hoofd
+    3300012: Woman-leg
+    3300014: Woman-leg.001
+    3300016: Woman-onderarm
+    3300018: Woman-onderarm.001
+    3300020: Woman-scheenbeen
+    3300022: Woman-scheenbeen.001
+    3300024: Woman-voet
+    3300026: Woman-voet.001
+    3300028: //RootNode
+    4300000: Woman
+    4300002: Woman-arm
+    4300004: Woman-onderarm
+    4300006: Woman-hand
+    4300008: Woman-hoofd
+    4300010: Woman-arm.001
+    4300012: Woman-onderarm.001
+    4300014: Woman-hand.001
+    4300016: Woman-leg.001
+    4300018: Woman-scheenbeen.001
+    4300020: Woman-voet.001
+    4300022: Woman-leg
+    4300024: Woman-scheenbeen
+    4300026: Woman-voet
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,8 +7,10 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject Menu;
     public GameObject Credits;
+    public GameObject Helpscreen;
 
     void Start () {
+        Helpscreen.SetActive(false);
         Credits.SetActive(false);
     }
 
@@ -25,13 +27,22 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void LoadMainMenu() {
+        Helpscreen.SetActive(false);
         Menu.SetActive(true);
         Credits.SetActive(false);
     }
 
     public void LoadCredits()
     {
+        Helpscreen.SetActive(false);
         Menu.SetActive(false);
         Credits.SetActive(true);
+    }
+
+    public void LoadHelp()
+    {
+        Helpscreen.SetActive(true);
+        Menu.SetActive(false);
+        Credits.SetActive(false);
     }
 }

@@ -1,0 +1,9 @@
+Question1: Deze vrouw heeft haar been gebroken, wat moet je doen?
+Question2: Nu dat je beweging hebt voorkomen, wat zal je nu moeten doen?
+Answers:
+    1: Druk op het bot geven.
+    2: Voorkom beweging.
+    3: Bel 112.
+    4: Geef de vrouw pijnstillers.
+FirstRightAnswer: 2
+SecondRightAnswer: 3

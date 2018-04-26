@@ -1,7 +1,14 @@
-ProjectStudio_BHV
-========================
+# ProjectStudio_BHV
 
-Version: 0.5.2
-------------
+The 'BHV Trainings App' studio project!
 
-The BHV studio project!
+## Built With
+
+* [Unity](https://unity3d.com/) - The application build enviroment.
+* [Git](https://git-scm.com/) - Used to have version management of this project
+
+## Authors
+
+* **Mike de Groot** - *Initial work* - [PublicGameCoder](https://github.com/PublicGameCoder)
+
+See also the list of [contributors](https://github.com/PublicGameCoder/ProjectStudio) who participated in this project.

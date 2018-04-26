@@ -7,6 +7,20 @@ TagManager:
   - Top
   - HurtPerson
   - HUDElement
+  - GameManager
+  - PauseElement
+  - IgPauseMenu
+  - SpawnPoint
+  - Score
+  - Fire
+  - Bucket
+  - Paper
+  - Cupboard
+  - Prank
+  - Tap
+  - window
+  - Door
+  - DoorFlipped
   layers:
   - Default
   - TransparentFX
